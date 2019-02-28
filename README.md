@@ -2,7 +2,7 @@
 
 ## Prepare
 1. Clone this repo
-2. cd /pathtorepo/vfb-curation-demo
+2. cd /path-to-repo
 3. Run: `docker-compose up`, wait for about 5 min for KB to start (restart docker first if you are unsure what is running at the moment)
 4. Go to http://localhost:7474/browser/
 5. Run:
@@ -65,3 +65,11 @@
 7. Query `MATCH (n:Project {projectid:'PROJ'}) RETURN n`, unfold to demonstrate what happened internally
 8. Unfold the Neuron you create to demonstrate the link to the neuron type
 
+## UI Demo
+
+### Add Dataset
+ 1. Go to http://localhost:8080/vfb-curation-ui/
+ 2. Click on 'Register Dataset'
+ 3. Add data (PROJ, 1234, Some kind of name)
+ 4. Hit save dataset
+ 

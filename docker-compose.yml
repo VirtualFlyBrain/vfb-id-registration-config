@@ -31,4 +31,4 @@ services:
     ports:
       - 8080:8080
     environment:
-      - CURATIONAPI=http://vfb-curation-api:8888/api
+      - CURATIONAPI=http://vfb-curation-api:8182/api
