@@ -17,7 +17,7 @@ services:
     links:
       - vfb-kb
     ports:
-      - 8888:8888
+      - 8182:8182
     environment:
       - KBserver=http://vfb-kb:7474
       - KBuser=neo4j
