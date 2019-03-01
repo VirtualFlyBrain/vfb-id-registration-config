@@ -72,4 +72,14 @@
  2. Click on 'Register Dataset'
  3. Add data (PROJ, 1234, Some kind of name)
  4. Hit save dataset
+ 5. You will see a confiromation dataset was create in the textfield below.
+ 6. You can deliberately chose to add wrong data, like the same dataset twice or a wrong ORCID. Not needed.
+ 
+ ## Add Neuron
+ 1. Analogous to Add Dataset. Note that currently, there is no uniqueness constraint on labels; you can generate multiple ids for the same label
+ 
+ ## Upload Neurons
+ 1. Download example data from https://github.com/monarch-ebi-dev/vfb-curation-demo/blob/master/demo_upload.csv
+ 2. Note that I only tried this with exactly this one dataset; not sure what will happen if you remove/add columns. But give changing it a shot if you want! Should work.
+ 3. Inspect the result table: some records might have failed. There is a button to tell you why.
  
