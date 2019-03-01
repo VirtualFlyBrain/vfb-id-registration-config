@@ -17,7 +17,7 @@ services:
     links:
       - vfb-kb
     ports:
-      - 8182:8182
+      - 5000:5000
     environment:
       - KBserver=http://vfb-kb:7474
       - KBuser=neo4j
@@ -27,8 +27,8 @@ services:
     depends_on:
       - vfb-curation-api
     links:
-      - vfb-curation-api
+      - vfb-curation-api:vfb-curation-api
     ports:
       - 8080:8080
     environment:
-      - CURATIONAPI=http://vfb-curation-api:8182/api
+      - CURATIONAPI=http://vfb-curation-api:5000/api
