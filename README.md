@@ -36,7 +36,7 @@
 9. Query `MATCH (n:Project {projectid:'PROJ'}) RETURN n`, unfold to demonstrate what happened internally
 
 ### Add Neuron
-1. Go to http://localhost:8182/api
+1. Go to http://localhost:5000/api
 2. Click on POST /neuron/
 3. Paste the following in the value box (Note the dataset IRI needs to be correct from the previous task):
 ```
