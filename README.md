@@ -15,7 +15,7 @@
 ## DEMO WEB API 
 
 ### Add Dataset
-1. Go to http://localhost:8182/api
+1. Go to http://localhost:5000/api
 2. Click on POST /dataset/
 3. Paste the following example in the Value Box
 ```
