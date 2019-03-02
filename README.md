@@ -7,9 +7,9 @@
 4. Go to http://localhost:7474/browser/
 5. Run:
   ```
-  CREATE (p:Project {projectid:'PROJ'}) # Creates a project
-  CREATE (p:Person {orcid:'1234'}) # Creates a Person
-  MATCH (p:Project {projectid:'PROJ'}) MATCH (n:Person {orcid:'1234'})  MERGE (p)<-[:has_admin_permissions]-(n) # Gives privileges to the person
+  CREATE (p:Project {projectid:'PROJ'}) // Creates a project
+  CREATE (n:Person {orcid:'1234'}) // Creates a Person
+  MERGE (p)<-[:has_admin_permissions]-(n) // Gives privileges to the person
 ```
 
 ## DEMO WEB API 
@@ -23,7 +23,7 @@
   "orcid": "1234",
   "project": "PROJ",
   "publication": "",
-  "short_name": "DOS 2019",
+  "short_name": "DOS2019",
   "source_data": "https://github.com/monarch-ebi-dev/vfb-curation-demo/blob/master/docker-compose.yml",
   "title": "DOS Demo Dataset (2019)"
 }
@@ -81,5 +81,4 @@
  ## Upload Neurons
  1. Download example data from https://github.com/monarch-ebi-dev/vfb-curation-demo/blob/master/demo_upload.csv
  2. Note that I only tried this with exactly this one dataset; not sure what will happen if you remove/add columns. But give changing it a shot if you want! Should work.
- 3. Inspect the result table: some records might have failed. There is a button to tell you why.
- 
+ 3. Inspect the result table: some records might have failed. There is a button to tell you why. 
