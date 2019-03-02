@@ -15,7 +15,7 @@
 ## DEMO WEB API 
 
 ### Add Dataset
-1. Go to http://localhost:8182/api
+1. Go to http://localhost:5000/api
 2. Click on POST /dataset/
 3. Paste the following example in the Value Box
 ```
@@ -36,7 +36,7 @@
 9. Query `MATCH (n:Project {projectid:'PROJ'}) RETURN n`, unfold to demonstrate what happened internally
 
 ### Add Neuron
-1. Go to http://localhost:8182/api
+1. Go to http://localhost:5000/api
 2. Click on POST /neuron/
 3. Paste the following in the value box (Note the dataset IRI needs to be correct from the previous task):
 ```
@@ -72,4 +72,13 @@
  2. Click on 'Register Dataset'
  3. Add data (PROJ, 1234, Some kind of name)
  4. Hit save dataset
+ 5. You will see a confiromation dataset was create in the textfield below.
+ 6. You can deliberately chose to add wrong data, like the same dataset twice or a wrong ORCID. Not needed.
  
+ ## Add Neuron
+ 1. Analogous to Add Dataset. Note that currently, there is no uniqueness constraint on labels; you can generate multiple ids for the same label
+ 
+ ## Upload Neurons
+ 1. Download example data from https://github.com/monarch-ebi-dev/vfb-curation-demo/blob/master/demo_upload.csv
+ 2. Note that I only tried this with exactly this one dataset; not sure what will happen if you remove/add columns. But give changing it a shot if you want! Should work.
+ 3. Inspect the result table: some records might have failed. There is a button to tell you why. 
