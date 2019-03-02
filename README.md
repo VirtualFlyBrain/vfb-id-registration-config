@@ -3,9 +3,10 @@
 ## Prepare
 1. Clone this repo
 2. cd /path-to-repo
-3. Run: `docker-compose up`, wait for about 5 min for KB to start (restart docker first if you are unsure what is running at the moment)
-4. Go to http://localhost:7474/browser/
-5. Run:
+3. Run: `docker-compose pull` to make sure you have the latest versions of the images installed.
+4. Run: `docker-compose up`, wait for about 5 min for KB to start (restart docker first if you are unsure what is running at the moment)
+5. Go to http://localhost:7474/browser/
+6. Run:
   ```
   CREATE (p:Project {projectid:'PROJ'}) // Creates a project
   CREATE (n:Person {orcid:'1234'}) // Creates a Person
