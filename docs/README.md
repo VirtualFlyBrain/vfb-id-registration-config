@@ -1,4 +1,4 @@
-# Virtual Fly Brain ID Serve: Overview
+# Virtual Fly Brain ID Server: Overview
 =============
 
 ![Pipeline Overview](curation-pipeline-overview.png)
@@ -15,9 +15,9 @@ Summary: The VFB ID server allows the user to register image data and reserve VF
   * Image: matentzn/vfb-curation-api:latest
   * Git: https://github.com/VirtualFlyBrain/vfb-curation-api
   * Summary: The ID Server API is a swagger REST API that allows the registration of datasets and images (image metadata upload).
-  * Access: http://api.ids.virtualflybrain.org/api/
+  * Access: http://ids.virtualflybrain.org/api/
 1. vfb-curation-ui
   * Image: matentzn/vfb-curation-ui-demo:latest
   * Git: https://github.com/monarch-ebi-dev/vfb-curation-demo
   * Summary: The ID Server UI offers access to basic functionality of the vfb-curation-api. It furthermore allows groups to look at 'what is already there' in terms of metadata (without the possibility to change data).
-  * Access: http://api.ids.virtualflybrain.org/api/
+  * Access: http://ids.virtualflybrain.org/vfb-curation-ui/
