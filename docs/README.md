@@ -1,5 +1,4 @@
 # Virtual Fly Brain ID Server: Overview
-=============
 
 ![Pipeline Overview](curation-pipeline-overview.png)
 
@@ -15,18 +14,18 @@ Summary: The VFB ID server allows the user to register image data and reserve VF
    * Summary: The VFB KB instance loads the [VFB KB Archive](http://data.virtualflybrain.org/archive/VFB-KB.tar.gz) and deploys it as a Neo4J instance. All the image metadata and their associations with Neurons and projects will be managed in the KB.
    * Access: http://kb.ids.virtualflybrain.org/browser/
 1. vfb-data-ingest-api
-  * Image: matentzn/vfb-curation-api:latest
-  * Git: https://github.com/VirtualFlyBrain/vfb-data-ingest-api
-  * Summary: The Data Ingest API is a swagger REST API that allows the registration of datasets and images (image metadata upload).
-  * Access: http://ids.virtualflybrain.org/api/
+   * Image: matentzn/vfb-curation-api:latest
+   * Git: https://github.com/VirtualFlyBrain/vfb-data-ingest-api
+   * Summary: The Data Ingest API is a swagger REST API that allows the registration of datasets and images (image metadata upload).
+   * Access: http://ids.virtualflybrain.org/api/
 1. vfb-data-ingest-ui
-  * Image: matentzn/vfb-curation-ui-demo:latest
-  * Git: https://github.com/monarch-ebi-dev/vfb-curation-demo
-  * Summary: The ID Server UI offers access to basic functionality of the vfb-curation-api. It furthermore allows groups to look at 'what is already there' in terms of metadata (without the possibility to change data).
-  * Access: http://ids.virtualflybrain.org/vfb-curation-ui/
+   * Image: matentzn/vfb-curation-ui-demo:latest
+   * Git: https://github.com/monarch-ebi-dev/vfb-curation-demo
+   * Summary: The ID Server UI offers access to basic functionality of the vfb-curation-api. It furthermore allows groups to look at 'what is already there' in terms of metadata (without the possibility to change data).
+   * Access: http://ids.virtualflybrain.org/vfb-curation-ui/
 1. vfb-data-ingest-config 
-  * Git: https://github.com/VirtualFlyBrain/vfb-data-ingest-config
-  * Summary: This repository contains global pipeline configuration, documentations, slides and references to other Data Ingest API/UI related metadata
+   * Git: https://github.com/VirtualFlyBrain/vfb-data-ingest-config
+   * Summary: This repository contains global pipeline configuration, documentations, slides and references to other Data Ingest API/UI related metadata
 
 # Primary user story "Ingest Dataset":
  
