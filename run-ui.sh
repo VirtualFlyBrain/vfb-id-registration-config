@@ -1,0 +1,1 @@
+docker-compose run vfb-data-ingest-ui

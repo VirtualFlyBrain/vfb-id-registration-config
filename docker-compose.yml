@@ -11,19 +11,23 @@ services:
       - 7474:7474
       - 7687:7687
   vfb-data-ingest-api:
-    image: matentzn/vfb-data-ingest-api:latest
+    image: vapi:latest
     depends_on:
       - vfb-kb
     links:
       - vfb-kb
     ports:
       - 5000:5000
+      - 3200:3200
     environment:
       - KBserver=http://vfb-kb:7474
       - KBuser=neo4j
       - KBpassword=neo
+      - REDIRECT_LOGIN="http://localhost:8080/dataingest-ui/user"
+      - CLIENT_SECRET="UNKNOWN"
+      - CLIENT_ID="ENQTIY7Z904S6O1W"
   vfb-data-ingest-ui:
-    image: matentzn/vfb-data-ingest-ui:latest
+    image: vui:latest
     depends_on:
       - vfb-data-ingest-api
     links:
@@ -31,4 +35,5 @@ services:
     ports:
       - 8080:8080
     environment:
-      - CURATIONAPI=http://vfb-data-ingest-api:5000/api
+      - dataingest_url=http://vfb-data-ingest-api:5000/api
+      - login_redirect_uri=http://localhost:8080/dataingest-ui/login
